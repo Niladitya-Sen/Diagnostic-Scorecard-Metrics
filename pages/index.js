@@ -19,8 +19,8 @@ export default function Home({ parameters, setParameters }) {
     for (const key in parameters) {
       Avg += parameters[key];
     }
-    Avg = Avg / 10;
-    setAvg(Avg);
+    Avg = Avg / 12;
+    setAvg(Avg.toString().substring(0, 4));
   }, [parameters]);
   return (
     <>
