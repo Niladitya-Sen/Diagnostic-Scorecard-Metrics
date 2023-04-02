@@ -7,10 +7,10 @@ const raleway = Raleway({
 });
 
 
-export default function Table({ heading, params, parameters, setParameters }) {
+export default function Table({ heading, params, parameters, setParameters, color }) {
     return (
         <div className='h-[fit-content] w-[fit-content]'>
-            <div className='w-[25rem] border-2 border-black border-b-0 py-2 text-xl font-bold text-center'>
+            <div className={`w-[25rem] border-2 border-black border-b-0 py-2 text-xl font-bold text-center ${color}`}>
                 <h2 className={raleway.className}>{heading}</h2>
             </div>
             <table className={`${raleway.className} w-[25rem] h-[15.3rem] border-2 border-black`}>
