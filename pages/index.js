@@ -14,8 +14,8 @@ const raleway = Raleway({
 
 export default function Home({ parameters, setParameters }) {
   const [avg, setAvg] = useState(0);
-  let Avg = 0;
   useEffect(() => {
+    let Avg = 0;
     for (const key in parameters) {
       Avg += parameters[key];
     }
@@ -67,7 +67,7 @@ export default function Home({ parameters, setParameters }) {
           </div>
           <div className={`self-start flex flex-col gap-3 px-5 py-3 ${raleway.className} font-semibold text-xl`}>
             <p>Over All Score: {avg} / 10 </p>
-            <p className='text-base'>Insight "Current position is satisfactory with basic work underway, needs deeper & refined focus to become commercially viable & investable"</p>
+            <p className='text-base'>Insight Current position is satisfactory with basic work underway, needs deeper & refined focus to become commercially viable & investable</p>
             <p className='-mb-4'>Scale Scoring: </p>
             <div className='flex flex-row justify-between text-base font-normal'>
               <p>1 - 3 Low</p>
