@@ -3,7 +3,7 @@ import React from 'react'
 export default function Select({ name, id, parameters, setParameters }) {
     return (
         <>
-            <select name={name} id={id} className='w-[4rem] h-[4rem] text-2xl px-3 font-bold' >
+            <select name={name} id={id} className='w-[4rem] h-[4rem] text-2xl px-2 font-bold' >
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
