@@ -42,9 +42,9 @@ export default function Home({ parameters, setParameters }) {
       <main>
         <div className='p-4 grid' style={{ gridTemplateColumns: "57rem auto" }}>
           <div className='grid grid-rows-4 lg:grid-cols-2 lg:grid-rows-2' style={{ gridTemplateColumns: "28rem 28rem", gridTemplateRows: "21rem 21rem" }}>
-            <Table heading={"Innovation & Intellectual Property"} params={["Originality - How unique is the technology", "IP Protection - Does the technology have strong IP position", "Global Patentability - What's the likelihood of full global patent application:"]} color={'bg-yellow-400'} parameters={parameters} setParameters={setParameters} />
+            <Table heading={"Innovation & Intellectual Property"} params={["Originality - How unique is the technology", "IP Protection - Does the technology have strong IP position", "Global Patentability - What's the likelihood of full global patent application"]} color={'bg-yellow-400'} parameters={parameters} setParameters={setParameters} />
 
-            <Table heading={"Design. Development & Technical"} params={["Concept - HOW well developed is the concept", "Development - How progressed is the R&D phase", "Production Feasibility - Is there a clear understanding of scale up roll out costs"]} color={'bg-green-400'} parameters={parameters} setParameters={setParameters} />
+            <Table heading={"Design. Development & Technical"} params={["Concept - How well developed is the concept", "Development - How progressed is the R&D phase", "Production Feasibility - Is there a clear understanding of scale up roll out costs"]} color={'bg-green-400'} parameters={parameters} setParameters={setParameters} />
 
             <Table heading={"Business, Commercial & Finance"} params={["Financial - How well developed is the financial models", "Business - Is there a clear sustainable business model", "Money - What's the current fiscal health of the venture."]} color={'bg-blue-600'} parameters={parameters} setParameters={setParameters} />
 
