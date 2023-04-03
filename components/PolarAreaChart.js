@@ -47,7 +47,7 @@ export default function PolarAreaChart({ parameters }) {
             <div id='pieLabels' className='hidden'>
                 <p className='absolute text-xs top-[8rem] left-[19rem] rotate-[-78deg]'>Originality</p>
                 <p className='absolute text-xs top-[11.3rem] left-[23.5rem] rotate-[-50deg]'>IP Protection</p>
-                <p className='absolute text-xs top-[16rem] left-[26rem] rotate-[13deg] break-words w-[70px]'>Global Patentability</p>
+                <p className='absolute text-xs top-[16rem] left-[26rem] break-words w-[70px]'>Global Patentability</p>
                 <p className='absolute text-xs top-[22rem] left-[28rem] rotate-[16deg]'>Concept</p>
                 <p className='absolute text-xs top-[26rem] left-[23rem] rotate-[47deg]'>Development</p>
                 <p className='absolute text-xs top-[28rem] left-[18.5rem] rotate-[74deg] break-words w-[62px]'>Production Feasibility</p>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Select({ name, id, parameters, setParameters }) {
+export default function Select({ name, id, }) {
     return (
         <>
             <select name={name} id={id} className='w-[4rem] h-[4rem] text-2xl px-2 font-bold' >
