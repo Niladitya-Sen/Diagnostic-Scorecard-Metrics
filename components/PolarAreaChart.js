@@ -73,7 +73,7 @@ export default function PolarAreaChart({ parameters }) {
                         },
                         borderColor: 'white',
                         borderRadius: 25,
-                        borderWidth: 2,
+                        borderWidth: 0,
                         color: 'white',
                         font: {
                             weight: 'bold'
