@@ -57,7 +57,7 @@ export default function Home({ parameters, setParameters }) {
             <div className={`${raleway.className} relative left-[12rem] top-[4rem] rotate-45 font-semibold bg-yellow-400 p-1 w-[13rem] text-center border-2 border-black`}>
               <p>Inovation & IP</p>
             </div>
-            <div className='w-[30rem] h-[30rem] rounded-full border-[5px] border-blue-600'>
+            <div className='w-[30rem] h-[30rem] rounded-full border-[5px] border-blue-600 p-[5px]'>
               <PolarAreaChart parameters={parameters} />
             </div>
             <div className={`${raleway.className} relative left-[12rem] top-[-4rem] -rotate-45 font-semibold p-1 bg-green-400 border-2 border-black `}>
