@@ -13,6 +13,7 @@ const raleway = Raleway({
 });
 
 export default function Home({ parameters, setParameters }) {
+  const date = new Date();
   const [avg, setAvg] = useState(0);
   useEffect(() => {
     let Avg = 0;
@@ -100,7 +101,7 @@ export default function Home({ parameters, setParameters }) {
       </main>
 
       <footer className={`bg-blue-600 ${raleway.className} font-semibold text-3xl p-10 text-white relative bottom-0 w-full`}>
-        <p>&#169; 2023 Copyright WaysAhead Global</p>
+        <p>&#169; {date.getFullYear()} Copyright WaysAhead Global</p>
       </footer>
     </>
   )
