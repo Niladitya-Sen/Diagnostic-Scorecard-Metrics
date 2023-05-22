@@ -1,3 +1,5 @@
+import Head from 'next/head'
+import logo from '../public/logo.png'
 import Alert, { alertIcons } from '@/components/Alert';
 import { AlertContext } from '@/context/Context';
 import '@/styles/globals.css'
@@ -30,6 +32,12 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
+      <Head>
+        <title>
+          Diagnostic Scorecard Metrics
+        </title>
+        <link rel="icon" href={logo.src} type="image/png" />
+      </Head>
       <AlertContext.Provider value={value}>
         <Alert />
         <Component parameters={parameters} setParameters={setParameters} {...pageProps} />

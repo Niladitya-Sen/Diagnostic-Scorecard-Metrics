@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Table from '@/components/Table'
 import { Raleway } from 'next/font/google'
 import logo from '../public/logo.png'
@@ -45,12 +44,6 @@ export default function Home({ parameters, setParameters }) {
 
   return (
     <>
-      <Head>
-        <title>
-          Diagnostic Scorecard Metrics
-        </title>
-        <link rel="icon" href={logo.src} type="image/png" />
-      </Head>
       <header>
         <nav className='p-7 flex gap-5 items-center'>
           <Link href="https://www.idea2mvp.co/" target='_blank'>
