@@ -64,78 +64,78 @@ export default function PolarAreaChart({ parameters }) {
 
     return (
         <>
-            <div id='pieLabels' className='hidden'>
-                <p className='absolute text-xs top-[8rem] left-[18.5rem] rotate-[-78deg]'>
+            <div id='pieLabels' className='absolute hidden'>
+                <p className='text-xs translate-x-[12.5rem] translate-y-[4rem] rotate-[-76deg]'>
                     Originality ({parameters["Originality"]})
                 </p>
-                <p className='absolute text-xs top-[11.3rem] left-[22.5rem] rotate-[-50deg]'>
+                <p className=' text-xs translate-x-[17rem] translate-y-[6rem] rotate-[-48deg] '>
                     IP Protection ({parameters["IP_Protection"]})
                 </p>
-                <p className='absolute text-xs top-[16rem] left-[26rem] break-words w-[90px]'>
+                <p className=' text-xs translate-x-[20rem] translate-y-[9rem] rotate-[-17deg]'>
                     Global Patentability ({parameters["Global_Patentability"]})
                 </p>
-                <p className='absolute text-xs top-[22rem] left-[26.5rem] rotate-[16deg]'>
+                <p className=' text-xs translate-x-[21rem] translate-y-[13.5rem] rotate-[12deg]'>
                     Concept ({parameters["Concept"]})
                 </p>
-                <p className='absolute text-xs top-[26rem] left-[22rem] rotate-[47deg]'>
+                <p className=' text-xs translate-x-[18rem] translate-y-[17rem] rotate-[42deg]'>
                     Development ({parameters["Development"]})
                 </p>
-                <p className='absolute text-xs top-[29rem] left-[18.5rem] rotate-[74deg] break-words w-[70px]'>
+                <p className=' text-xs translate-x-[12.5rem] translate-y-[18rem] rotate-[74deg]'>
                     Production Feasibility ({parameters["Production_Feasibility"]})
                 </p>
-                <p className='absolute text-xs left-[13.2rem] top-[30rem] rotate-[103deg]'>
+                <p className=' text-xs translate-x-[8rem] translate-y-[15rem] rotate-[-78deg] '>
                     Money ({parameters["Money"]})
                 </p>
-                <p className='absolute text-xs top-[26.5rem] left-[8.5rem] rotate-[-48deg]'>
+                <p className=' text-xs translate-x-[5rem] translate-y-[12rem] rotate-[-44deg] '>
                     Business ({parameters["Business"]})
                 </p>
-                <p className='absolute text-xs top-[21.5rem] left-[5.5rem] rotate-[-12deg]'>
+                <p className=' text-xs translate-x-[3rem] translate-y-[7.5rem] rotate-[-23deg] '>
                     Financial ({parameters["Financial"]})
                 </p>
-                <p className='absolute text-xs top-[16.5rem] left-[5.5rem] rotate-[14deg]'>
+                <p className=' text-xs translate-x-[4rem] translate-y-[3rem] rotate-[13deg]' >
                     Customer ({parameters["Customer"]})
                 </p>
-                <p className='absolute text-xs top-[11rem] left-[8rem] rotate-45'>
+                <p className=' text-xs translate-x-[6.5rem] translate-y-[0] rotate-[40deg] '>
                     Market ({parameters["Market"]})
                 </p>
-                <p className='absolute text-xs top-[8rem] left-[13rem] rotate-[75deg]'>
+                <p className=' text-xs translate-x-[7.5rem] translate-y-[-7rem] rotate-[-107deg]' >
                     Product ({parameters["Product"]})
                 </p>
             </div>
-            <PolarArea data={{
-                labels: labels,
-                datasets: [
-                    {
-                        data: plot.data,
-                        backgroundColor: plot.color,
-                    },
-                    {
-                        data: [10],
-                        backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                        borderWidth: 0,
-                        animations: null
-                    }
-                ],
-            }} options={{
-                scales: {
-                    r: {
-                        ticks: {
-                            display: false
+            <PolarArea className='relative -z-10' data={{
+                    labels: labels,
+                    datasets: [
+                        {
+                            data: plot.data,
+                            backgroundColor: plot.color,
+                        },
+                        {
+                            data: [10],
+                            backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                            borderWidth: 0,
+                            animations: null
                         }
-                    }              
-                },
-                interaction: {
-                    mode: []
-                },
-                plugins: {
-                    tooltip: {
-                        enabled: false,
+                    ],
+                }} options={{
+                    scales: {
+                        r: {
+                            ticks: {
+                                display: false
+                            }
+                        }
                     },
-                    legend: {
-                        display: false
+                    interaction: {
+                        mode: []
                     },
-                }
-            }} plugins={[thresholdLines]} />
-        </>
-    )
+                    plugins: {
+                        tooltip: {
+                            enabled: false,
+                        },
+                        legend: {
+                            display: false
+                        },
+                    }
+                }} plugins={[thresholdLines]} />
+            </>
+            )
 }
