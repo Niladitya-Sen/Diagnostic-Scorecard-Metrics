@@ -1,14 +1,9 @@
 import Table from '@/components/Table'
-import { Raleway } from 'next/font/google'
 import logo from '../public/logo.png'
 import PolarAreaChart from '@/components/PolarAreaChart'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-
-const raleway = Raleway({
-  subsets: ['latin'],
-});
 
 export default function Home({ parameters, setParameters }) {
   const date = new Date();
@@ -49,13 +44,13 @@ export default function Home({ parameters, setParameters }) {
           <Link href="https://www.idea2mvp.co/" target='_blank'>
             <Image src={logo.src} alt={"Idea2MVP"} width={200} height={200} />
           </Link>
-          <h1 className={`${raleway.className} text-3xl font-bold`}>Diagnostic Scorecard Metrics</h1>
+          <h1 className={`Raleway text-3xl font-bold`}>Diagnostic Scorecard Metrics</h1>
         </nav>
       </header>
 
       <main className='grid gap-[2rem] -ml-20 place-content-center place-items-start'>
         <div className='place-self-start'>
-          <span className={`block ${raleway.className} font-semibold`}>Product Name / Description</span>
+          <span className={`block Raleway font-semibold`}>Product Name / Description</span>
           <input type='text' className='w-[52rem] h-[2.5rem] px-5 py-2 border-2 border-blue-700 rounded-md hover:ring-2 hover:ring-blue-500 focus:ring-2 focus:ring-blue-500 outline-none' />
         </div>
 
@@ -69,25 +64,25 @@ export default function Home({ parameters, setParameters }) {
           <Table className="row-[2/3] col-[2/3]" heading={"Product, Market & Customer"} params={["Product - How well developed is the product Offer", "Market - Is there clearly defined market and market opportunity is well defined", "Customer - IS the target customer defined and needs clearly understood"]} color={'bg-violet-600'} parameters={parameters} setParameters={setParameters} />
 
           <div className='col-[3/4] row-[1/4] relative left-[2.5rem]'>
-            <div className={`${raleway.className} w-[13rem] relative left-[-4rem] top-[6rem] -rotate-45 font-semibold text-white p-1 bg-violet-600 border-2 border-black`}>
+            <div className={`Raleway w-[13rem] relative left-[-4rem] top-[6rem] -rotate-45 font-semibold text-white p-1 bg-violet-600 border-2 border-black`}>
               <p>Product Market Customer</p>
             </div>
-            <div className={`${raleway.className} relative left-[21rem] top-[4rem] rotate-45 font-semibold bg-yellow-400 p-1 w-[13rem] text-center border-2 border-black`}>
+            <div className={`Raleway relative left-[21rem] top-[4rem] rotate-45 font-semibold bg-yellow-400 p-1 w-[13rem] text-center border-2 border-black`}>
               <p>Inovation & IP</p>
             </div>
             <div className='w-[30rem] h-[30rem] rounded-full border-[5px] border-blue-600 p-[5px]'>
               <PolarAreaChart parameters={parameters} />
             </div>
-            <div className={`${raleway.className} w-[16rem] relative left-[18.5rem] top-[-4rem] -rotate-45 font-semibold p-1 bg-green-400 border-2 border-black `}>
+            <div className={`Raleway w-[16rem] relative left-[18.5rem] top-[-4rem] -rotate-45 font-semibold p-1 bg-green-400 border-2 border-black `}>
               <p>Design Development Technical</p>
             </div>
-            <div className={`${raleway.className} w-[16rem] relative left-[-5.5rem] top-[-6rem] rotate-45 font-semibold text-white p-1 bg-blue-600 border-2 border-black`}>
+            <div className={`Raleway w-[16rem] relative left-[-5.5rem] top-[-6rem] rotate-45 font-semibold text-white p-1 bg-blue-600 border-2 border-black`}>
               <p>Business Commercials Finances</p>
             </div>
           </div>
         </div>
         <div className='place-self-start flex flex-row justify-between items-center w-full'>
-          <div className={`flex flex-col gap-3 ${raleway.className} font-semibold text-xl`}>
+          <div className={`flex flex-col gap-3 Raleway font-semibold text-xl`}>
             <p>Over All Score: {avg} / 10 </p>
             <p className='text-base'>Insight Current position is satisfactory with basic work underway, needs deeper & refined focus to become commercially viable & investable</p>
             <p className='-mb-2'>Scale Scoring: </p>
@@ -101,7 +96,7 @@ export default function Home({ parameters, setParameters }) {
         </div>
       </main>
 
-      <footer className={`mt-10 bg-blue-600 ${raleway.className} font-semibold text-3xl p-10 text-white relative bottom-0 w-full`}>
+      <footer className={`mt-10 bg-blue-600 Raleway font-semibold text-3xl p-10 text-white relative bottom-0 w-full`}>
         <p>&#169; {date.getFullYear()} Copyright WaysAhead Global</p>
       </footer>
     </>

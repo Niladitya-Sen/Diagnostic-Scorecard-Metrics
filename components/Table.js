@@ -1,19 +1,13 @@
 import React from 'react'
-import { Raleway } from 'next/font/google'
 import Select from './Select';
-
-const raleway = Raleway({
-    subsets: ['latin']
-});
-
 
 export default function Table({ className, heading, params, color }) {
     return (
         <div className={`h-fit w-fit ${className}`}>
             <div className={`w-[25rem] border-2 border-black border-b-0 py-2 text-xl font-bold text-center ${color}`}>
-                <h2 className={raleway.className}>{heading}</h2>
+                <h2 className="Raleway">{heading}</h2>
             </div>
-            <table className={`${raleway.className} w-[25rem] h-[15.3rem] border-2 border-black`}>
+            <table className={`Raleway w-[25rem] h-[15.3rem] border-2 border-black`}>
                 <tbody>
                     <tr className='border-2 border-black'>
                         <td className='p-3'>{params[0]}</td>
